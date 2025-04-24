@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .input-field:hover {
+      border-color: #4CAF50; /* Green border on hover */
+    }
+
+    .btn:hover {
+      background-color: #4CAF50; /* Green background on hover */
+      transition: background-color 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+    <div class="bg-blue-600 text-white p-6">
+        <!-- Header Section -->
+        <div class="flex justify-between items-center">
+            <!-- Logo / Title -->
+            <div class="text-3xl font-bold">
+                Business Tourism
+            </div>
+    
+            <!-- Navigation and Actions -->
+            <div class="flex items-center space-x-6">
+                <!-- Login Section -->
+                <div>
+                    <button class="bg-white text-blue-600 px-4 py-2 rounded-md font-semibold"><a href="login.html"> login</a>
+                    
+                    </button>
+                </div>
+    
+                <!-- Add Account Button -->
+                <div>
+                    <button class="bg-green-500 text-white px-4 py-2 rounded-md font-semibold">
+                        Add Account
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray-100 h-screen flex items-center justify-center">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+          <h2 class="text-2xl font-semibold text-center mb-6">Login</h2>
+          <form action="#" method="POST">
+            <div class="mb-4">
+              <label for="name" class="block text-gray-700">Name</label>
+              <input type="text" id="name" name="name" class="input-field w-full p-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400" required>
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-gray-700">Email</label>
+              <input type="email" id="email" name="email" class="input-field w-full p-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400" required>
+            </div>
+            <div class="mb-4">
+              <label for="password" class="block text-gray-700">Password</label>
+              <input type="password" id="password" name="password" class="input-field w-full p-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-400" required>
+            </div>
+            <button type="submit" class="btn w-full bg-blue-500 text-white py-2 rounded-lg transition-all duration-300 ease-in-out">Login</button>
+          </form>
+        </div>
+      </div>
+</body>
+</html>
